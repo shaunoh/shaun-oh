@@ -2,31 +2,49 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Centered Box</title>
+  <title>Centered Box with Section</title>
   <style>
     body {
       background-color: #89CFF0; /* baby blue */
-      display: flex;
-      justify-content: center;   /* horizontal center */
-      align-items: center;       /* vertical center */
-      height: 100vh;             /* full viewport height */
       margin: 0;
       font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column; /* stack items vertically */
+      align-items: center;    /* center horizontally */
     }
 
     .center-box {
       background-color: white;
       padding: 40px 60px;
-      border-radius: 12px;       /* rounded corners */
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* soft shadow */
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
       text-align: center;
+      margin-top: 80px; /* move it down a little from top */
+    }
+
+    .wide-box {
+      background-color: white;
+      width: 80%;              /* make it wide */
+      max-width: 900px;         /* but not too wide */
+      padding: 40px;
+      margin-top: 40px;         /* space between the two boxes */
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
   </style>
 </head>
 <body>
   <div class="center-box">
-    <h1>Hello!</h1>
-    <p>This is a white rectangle centered on the screen.</p>
+    <h1>Shaun Oh</h1>
+    <p>Budding Computer Scientist</p>
+  </div>
+
+  <div class="wide-box">
+    <h2>About Me</h2>
+    <p>
+      This is a wider white rectangle where you can add more content, text, or images. 
+      It stays centered and looks like a clean content section on the baby blue background.
+    </p>
   </div>
 </body>
 </html>
