@@ -9,7 +9,7 @@
       margin: 0;
       font-family: Arial, sans-serif;
       display: flex;
-      flex-direction: column; /* stack items vertically */
+      flex-direction: row; /* stack items vertically */
       align-items: center;    /* center horizontally */
     }
 
@@ -24,16 +24,31 @@
 
     .wide-box {
       background-color: white;
-      width: 80%;              /* make it wide */
-      max-width: 900px;         /* but not too wide */
+      width: 80%;              
+      max-width: 900px;         
       padding: 20px;
-      margin-top: 40px;         /* space between the two boxes */
+      margin-top: 40px;        
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
+
+    /* floating icons container */
+    .social-icons {
+      position: fixed;
+      bottom: 20px;   /* distance from bottom */
+      right: 20px;    /* distance from right */
+      display: flex;
+      flex-direction: column; /* stack vertically, change to row if you want side by side */
+      gap: 10px; /* spacing between icons */
+    }
+
+    .social-icons img {
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+    }
   </style>
-        <!-- Favicon aka icon on tab-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 </head>
 <body>
   <div class="center-box">
@@ -45,12 +60,20 @@
     <h2>About Me</h2>
     <p>
       Include Icons and links to other pages
-      <li><a href=contact.html>contact</a>
-      <li><a href=resume.html>resume</a>
-      <li><a href=projects.html>projects</a>
-      <li><a href=https://www.linkedin.com/in/shaun-oh-923853249/><img src="icons8-linkedin-30.png"></a>
-      <li><a href=https://github.com/shaunoh><img src="icons8-github-30.png"></a>
+      <li><a href="contact.html">contact</a></li>
+      <li><a href="resume.html">resume</a></li>
+      <li><a href="projects.html">projects</a></li>
     </p>
+  </div>
+
+  <!-- floating icons -->
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/in/shaun-oh-923853249/" target="_blank">
+      <img src="icons8-linkedin-30.png" alt="LinkedIn">
+    </a>
+    <a href="https://github.com/shaunoh" target="_blank">
+      <img src="icons8-github-30.png" alt="GitHub">
+    </a>
   </div>
 </body>
 </html>
