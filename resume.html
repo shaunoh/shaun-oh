@@ -3,36 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <title>Centered Box with Section</title>
+
   <style>
     body {
       background-color: #89CFF0; /* baby blue */
       margin: 0;
       font-family: Arial, sans-serif;
       display: flex;
-      flex-direction: column; /* stack items vertically */
-      align-items: center;    /* center horizontally */
+      flex-direction: column;
+      align-items: center;
     }
+
     h1 {
-  font-size: 3rem;   /* really big */
-}
+      font-size: 3rem;
+    }
+
     h2 {
-  font-size: 2rem;
-}
-    </style>
-<!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-  <h1>Resume</h1>
-<h2>Experience</h2>
-<a href="Résumé.pdf" target="_blank">
-      <img src="icons8-download-30.png" alt="Download">
-    </a>
-    <li><a href="Résumé.pdf"/>Download Resume</a>
-<h2>Education</h2>
-<p>2024 - Present</p>
-<p>University of Waterloo</p>
-<p>Waterloo, ON</p>
-<p>Bachelor's, Computer Science</p>
-<h2>Computer Skills</h2>
-<p>Java</p>
-<p>C</p><p>Python</p><p>Microsoft Certified: Azure Fundamentals</p><p>Microsoft Certified: Azure AI Fundamentals</p>
-<h2>Professional Skills</h2><p>Collaboration</p><p>Organzation</p>
+      font-size: 2rem;
+    }
+
+    .section {
+      background-color: white;
+      width: 80%;
+      max-width: 700px;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+  </style>
+
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+</head>
+
+<body>
+
+<h1>Resume</h1>
+
+<div class="section">
+  <h2>Experience</h2>
+  <a href="Résumé.pdf" target="_blank">
+    <img src="icons8-download-30.png" alt="Download">
+  </a>
+  <li><a href="Résumé.pdf">Download Resume</a></li>
+</div>
+
+<div class="section">
+  <h2>Education</h2>
+  <p>2024 - Present</p>
+  <p>University of Waterloo</p>
+  <p>Waterloo, ON</p>
+  <p>Bachelor's, Computer Science</p>
+</div>
+
+<div class="section">
+  <h2>Computer Skills</h2>
+  <p>Java</p>
+  <p>C</p>
+  <p>Python</p>
+  <p>Microsoft Certified: Azure Fundamentals</p>
+  <p>Microsoft Certified: Azure AI Fundamentals</p>
+</div>
+
+<div class="section">
+  <h2>Professional Skills</h2>
+  <p>Collaboration</p>
+  <p>Organization</p>
+</div>
+
+</body>
+</html>
